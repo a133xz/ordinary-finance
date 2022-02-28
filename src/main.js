@@ -18,6 +18,6 @@ export default function (Vue, { appOptions, head, router }) {
   });
   head.link.push({
     rel: 'stylesheet',
-    href: 'https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap'
+    href: 'https://fonts.googleapis.com/css2?family=Cormorant:wght@300;500;700&display=swap'
   });
 }

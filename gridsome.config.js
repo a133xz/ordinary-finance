@@ -1,7 +1,8 @@
 module.exports = {
   siteName: 'Ordinary Finance',
-  siteDescription: 'Ordinary Finance',
-  siteUrl: '',
+  siteDescription:
+    'Ordinary Finance makes simple tools to give you peace of mind when it comes to your money. Our first release will be here in April.',
+  siteUrl: 'https://www.ordinary.finance/',
   plugins: [
     {
       use: '@gridsome/plugin-critical',
@@ -11,12 +12,12 @@ module.exports = {
         height: 900
       }
     },
-    // {
-    //   use: '@gridsome/plugin-sitemap',
-    //   options: {
-    //     cacheTime: 600000
-    //   }
-    // },
+    {
+      use: '@gridsome/plugin-sitemap',
+      options: {
+        cacheTime: 600000
+      }
+    },
     {
       use: 'gridsome-plugin-sass-resources-loader',
       options: {
@@ -30,7 +31,7 @@ module.exports = {
         //title: '',
         //image: '/meta.png',
         themeColor: '#171c31',
-        robots: true,
+        robots: true
         //lang: 'en',
         //locale: 'en_EN'
       }

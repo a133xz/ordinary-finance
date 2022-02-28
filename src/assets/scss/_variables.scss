@@ -1,5 +1,5 @@
 // SCSS Variables
-$base-font-size-unit: 9;
+$base-font-size-unit: 11;
 $base-font-size: $base-font-size-unit * 2;
 $base-font-size-mobile: 16;
 $space-unit: 8;
@@ -16,7 +16,7 @@ $colors: (
 
 //  Typography Styles
 @mixin font {
-  font-family: "Inter", $font-fallback;
+  font-family: "Cormorant", $font-fallback;
 }
 
 @mixin p-x-spacer-sm {
