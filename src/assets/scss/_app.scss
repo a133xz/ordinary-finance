@@ -1,0 +1,32 @@
+// Default colors
+:root {
+  @each $color, $value in $colors {
+    --site-#{$color}: #{$value};
+  }
+}
+
+html {
+  font-size: #{$base-font-size}px;
+  @include breakpoint(mobile-only) {
+    font-size: #{$base-font-size-mobile}px !important;
+  }
+}
+
+body {
+  @include font;
+  color: var(--site-dark);
+  padding: 0;
+
+  --gradient-to: #dbeafe;
+  --gradient-from: #ffdbdb;
+  --gradient-stops: var(--gradient-from),
+    var(--gradient-to, rgba(209, 250, 229, 0));
+
+  background-image: linear-gradient(to bottom right, var(--gradient-stops));
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}

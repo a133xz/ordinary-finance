@@ -1,0 +1,17 @@
+// Bootstrap
+// @import "bootstrap";
+
+// Normalize
+@import "normalize";
+
+// Modules
+@import "variables";
+@import "utils";
+// Global style
+@import "app";
+
+// _variables --> base font-size, typography and colours,
+// _utils --> breakpoints, space utilities, rem-cal for the fonts
+// _app --> global styles for the app
+//
+// It's important to say that neither `_utils` or `variable` should have any css
